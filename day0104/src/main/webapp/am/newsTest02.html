@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<script type="text/javascript">
+		let news = ["이유미 이동환 기자 = 국민의힘 김종인 총괄선대위원장은 4일 선대위 개편과 관련해 후보가 어떤 결심을 하느냐를 기다리고 있다고 말했다.",
+					"김 위원장은 이날 서울 광화문 자신의 사무실에서 기자들과 만나 후보 생각이 있으니 아직은 뭐라고 결론을 낼 수가 없다며 이같이 밝혔다.",
+					"윤 후보가 선대위 위원장·본부장단 사의 표명을 수용하고 새로 선대위 구성에 나설지에 대해서는",
+					"이 과정에 관여했던 것으로 알려진 임태희 총괄상황본부장은 이날 광화문 사무실로 찾아가 김 위원장에게 당시 상황에 관해 설명하고 이해를 구했다.",
+					"전날 김 위원장은 선대위의 전면 개편을 단행하겠다고 선언, 사실상 해체 수준에 가까운 쇄신책을 요구하고 있다."];
+	
+		
+		window.onload=()=>{
+			let n=1;
+			let i=0;
+			setInterval(() => {
+				let data= news[i].substr(0,n++);
+				document.getElementById("result").innerHTML=data;
+				if(n>=news[i].length){
+					n=1;
+					i++;
+				}
+				if(i>news.length){
+					i=0;
+					n=1;
+				}
+			}, 100);
+		}
+		
+		
+		/*
+		window.onload=()=>{
+			let n=1;  v  
+			let i=0;	
+			setInterval(	() => {
+			
+				let data = news[i].substr(0,n++);
+				document.getElementById("result").innerHTML=data;
+				if(n>=news[i].length){
+					n=1;
+					i++;
+				}
+				if(i>=news.length){
+					i=0;
+					n=1;
+				}
+			}, 50);
+		}
+		
+		*/
+		
+		 
+		 
+	</script>
+</head>
+<body>
+	<div id ="result"></div>
+	 
+</body>
+</html>

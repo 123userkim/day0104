@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<script type="text/javascript">
+	//3초 뒤에 딱 한 번만 동작함
+		setTimeout(()=>{
+			let today = new Date();
+			document.getElementById("result").innerHTML = today;
+			
+		},3000);
+	</script>
+</head>
+<body>
+	3초 뒤에 현재 시간이 출력됩니다.
+	<hr>
+	<div id= "result"></div>
+</body>
+</html>

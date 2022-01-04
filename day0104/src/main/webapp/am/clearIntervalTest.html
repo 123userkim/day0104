@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>	
+	<script type="text/javascript">
+	
+	//시작 버튼을 누르면 타이머 시작, 중지를 누르면 시간 중지
+	let my;
+	let start=()=>{
+		my=	setInterval(() => {
+			let today = new Date();
+			document.getElementById("result").innerHTML=today;
+		}, 1000);
+	}
+	
+	let stop=()=>{
+		clearInterval(my);
+	}
+	
+	
+	
+	/*---------------- MY--------------
+	
+	function start(){
+		
+		let timer = setInterval(() => {
+			let today = new Date();
+			document.getElementById("result").innerHTML = today;	
+		}, 1000);
+		if(function stop() {
+			clearInterval(timer);
+		}){
+			
+		}	 
+	};
+	
+	
+	
+	function start(){
+		let timer = setInterval(() => {	 
+				let today = new Date();
+				document.getElementById("result").innerHTML = today;	
+			},1000);
+		}
+		
+		function k() {
+			clearInterval(timer);
+		}
+		function stop() {		
+			k();		
+		}
+		
+	*/
+	
+	/*---------------- th--------------
+	let my;
+	let start =()=>{
+		    my =  setInterval( () => {
+		    	let today = new Date();
+			document.getElementById("result").innerHTML=today;
+		}, 1000);
+	}
+	let stop =()=>{
+		clearInterval(my);
+	}
+	*/
+	
+	 
+	</script>
+</head>
+<body>
+	<button onclick="start()">시작</button>
+	<button onclick="stop()">중지</button>
+	<hr>
+	<div id="result"></div>
+</body>
+</html>

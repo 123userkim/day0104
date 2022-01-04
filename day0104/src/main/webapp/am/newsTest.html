@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title> 
+	<script type="text/javascript">
+	//1초마다 글자가 늘어나게 해서 전체 문장을 다 보이게
+	
+	let news = "이유미 이동환 기자 = 국민의힘 김종인 총괄선대위원장은 4일 선대위 개편과 관련해 후보가 어떤 결심을 하느냐를 기다리고 있다고 말했다.";
+	  
+	window.onload=()=>{
+		let n=1;
+		setInterval( () => {
+			let data = news.substr(0,n++);	
+				if(n>=news.length){
+					n=1;
+				}			
+			}, 200);	
+	}
+	
+ 
+		/*
+		 let data ="";
+		 
+		    	 setInterval( () => {
+		    		 while(true){
+			    		 let result = news.substring(0,1);
+			    	   
+			    	  		document.getElementById("result").innerHTML=data;
+			    	  }		    
+					
+				}, 1000);
+		*/    	 
+		 
+	</script>
+</head>
+<body>
+	<div id ="result"></div>
+	 
+</body>
+</html>

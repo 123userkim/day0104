@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<script type="text/javascript">
+	/*
+		let hello=()=>{
+			console.log("hello");
+		}
+	*/
+		//함수를 매개변수로 전달받음
+		let pro = (k)=>{			
+			for(i=1; i<=10 ; i++){
+				k();
+			}
+		}
+		
+		/*
+		//함수호출시에, 매개변수를 전달 :  콜백함수
+		//이름없는 함수를 정의할 수 있음
+		pro(function () {
+			console.log("hello");
+		});
+		*/
+		
+		pro(()=>{
+			console.log("hello");
+		});
+	</script>
+</head>
+<body>
+
+</body>
+</html>

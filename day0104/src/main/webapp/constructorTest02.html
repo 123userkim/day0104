@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function Member(name, age){
+		this.name = name;
+		this.age = age;
+	}
+	
+	Member.prototype.print = function(){
+		console.log(`${this.name}의 나이는 ${this.age}살입니다.`);
+	}
+	//화살표 함수로 표현하면 동작x
+	
+	let hong = new Member("홍길동",20);//홍길동의 나이는 20살입니다.
+	hong.print();
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>
